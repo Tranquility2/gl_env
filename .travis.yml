@@ -1,0 +1,8 @@
+os: windows
+language: cpp
+
+before_script:
+  - cd build
+  - cmake ..
+
+script: msbuild gl_env.sln
