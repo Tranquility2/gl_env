@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Tranquility2/gl_env.svg?branch=master)](https://travis-ci.com/Tranquility2/gl_env)
+
 # Why
 I wanted to learn OpenGL so @ChibiDenDen advised me that I should Start with a triangle... 
 Little did I know lots of boilerplate is needed just to print something onto the screen :smile:
