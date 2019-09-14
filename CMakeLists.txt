@@ -22,14 +22,6 @@ set(GLFW_BUILD_DOCS OFF)
 
 FetchContent_MakeAvailable(glew glfw)
 
-# add_library(glew STATIC IMPORTED)
-# set_target_properties(glew PROPERTIES
-    # IMPORTED_LOCATION_RELEASE glew.lib
-    # IMPORTED_LOCATION_DEBUG   glewd.lib
-# )
-# link_directories(${CMAKE_BINARY_DIR}/lib)
-# target_link_libraries(gl_env glew)
-
 add_definitions(-DGLEW_STATIC)
 target_link_libraries(gl_env PRIVATE libglew_static glfw)
 
