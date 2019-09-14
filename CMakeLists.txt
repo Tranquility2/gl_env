@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.14)
+cmake_minimum_required (VERSION 3.0)
 cmake_policy(SET CMP0048 NEW)
 project(gl_env VERSION 0.0.1 LANGUAGES CXX)
 
@@ -20,7 +20,17 @@ FetchContent_Declare(
 option (GLFW_BUILD_DOCS "Build the GLFW documentation" ON)
 set(GLFW_BUILD_DOCS OFF)
 
-FetchContent_MakeAvailable(glew glfw)
+# FetchContent_MakeAvailable(glew glfw)
+FetchContent_GetProperties(glew)
+if(NOT glew_POPULATED)
+  FetchContent_Populate(glew)
+  add_subdirectory(${glew_SOURCE_DIR} ${glew_BINARY_DIR})
+endif()
+FetchContent_GetProperties(glfw)
+if(NOT glfw_POPULATED)
+  FetchContent_Populate(glfw)
+  add_subdirectory(${glfw_SOURCE_DIR} ${glfw_BINARY_DIR})
+endif()
 
 add_definitions(-DGLEW_STATIC)
 target_link_libraries(gl_env PRIVATE libglew_static glfw)
