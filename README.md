@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/Tranquility2/gl_env.svg?branch=master)](https://travis-ci.com/Tranquility2/gl_env)
 
 # Why
-I wanted to learn OpenGL so @ChibiDenDen advised me that I should Start with a triangle... 
+I wanted to learn OpenGL so [ChibiDenDen][4] advised me that I should Start with a triangle... 
 Little did I know lots of boilerplate is needed just to print something onto the screen :smile:
 
 This Project is basicly a playground for OpenGL without having to deal with all the overhead of buidling an environment.
@@ -14,7 +14,7 @@ Currently it's based on 2 subprojects:
     cd build
     cmake .. -Wno-dev && msbuild gl_env.sln
 
-Big Thanks to @Verose for the CMake guidance.
+Big Thanks to [Verose][5] for the CMake guidance.
 
 Some nice projects you may want to cover (that helped me):
 - https://github.com/stevenlovegrove/Pangolin
@@ -23,3 +23,5 @@ Some nice projects you may want to cover (that helped me):
 [1]: https://sourceforge.net/projects/glew "GLEW"
 [2]: https://www.glfw.org/ "GLFW"
 [3]: https://cmake.org "CMake"
+[4]: https://github.com/ChibiDenDen
+[5]: https://github.com/Verose
