@@ -12,7 +12,7 @@ Currently it's based on 2 subprojects:
 
 ## Howto Run
     cd build
-    cmake .. -Wno-dev && msbuild gl_env.sln
+    cmake .. && msbuild gl_env.sln
 
 Big Thanks to [Verose][5] for the CMake guidance.
 
