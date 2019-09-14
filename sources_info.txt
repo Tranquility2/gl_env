@@ -1,0 +1,33 @@
+CMAKE
+https://cmake.org/download/
+
+GLFW
+https://www.glfw.org/
+
+#Download Sources (https://github.com/glfw/glfw/releases/download/3.3/glfw-3.3.zip)
+#Compile:
+```cd glew-2.1.0
+cmake .
+cd src
+msbuild glfw.vcxproj```
+You should now have: `glfw-3.3\src\Debug\glfw3.lib`
+
+#Download Binary & Extract
+https://github.com/glfw/glfw/releases/download/3.3/glfw-3.3.bin.WIN64.zip
+
+
+GLEW
+https://sourceforge.net/projects/glew
+
+#Download Sources (https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0.zip/download)
+#Compile:
+```cd glew-2.1.0
+cd build\cmake
+cmake .
+msbuild glew.sln```
+You should now have:
+1. `glew-2.1.0\build\cmake\lib\Debug\glew32d.lib`
+2. `glew-2.1.0\build\cmake\bin\Debug\glew32d.dll`
+
+#Download Binary & Extract
+https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0-win32.zip/download
